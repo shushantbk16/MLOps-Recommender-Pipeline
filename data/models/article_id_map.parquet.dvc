@@ -1,0 +1,5 @@
+outs:
+- md5: 76904e844bf49e8c2540739be8623272
+  size: 20544790
+  hash: md5
+  path: article_id_map.parquet

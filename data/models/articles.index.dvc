@@ -1,0 +1,5 @@
+outs:
+- md5: e9cb1164869ab6584de02cffae1abe98
+  size: 155945517
+  hash: md5
+  path: articles.index

@@ -1,0 +1,5 @@
+outs:
+- md5: a871ae2c8bcdf0a8e25db61783f05060
+  size: 463120
+  hash: md5
+  path: xgb_ranker.pkl

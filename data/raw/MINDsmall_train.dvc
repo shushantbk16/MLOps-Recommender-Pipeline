@@ -1,0 +1,6 @@
+outs:
+- md5: b86c004baf95312b5f6ef78875c7a2a5.dir
+  size: 1500075888
+  nfiles: 5
+  hash: md5
+  path: MINDsmall_train

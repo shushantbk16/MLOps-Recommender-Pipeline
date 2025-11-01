@@ -1,0 +1,6 @@
+outs:
+- md5: c7eaa9d831e767154a2af588b6a2db11.dir
+  size: 1607855371
+  nfiles: 5
+  hash: md5
+  path: MINDsmall_test

@@ -1,21 +1,16 @@
-# Python
-__pycache__/
-*.pyc
-.env
-
-# VSCode
-.vscode/
-
-# DVC
-.dvc/cache/
-
 # Data & Models
-# DVC will track these, so Git must ignore them
+# Ignore all large data and model files in these folders...
 data/raw/*
 data/processed/*
 data/models/*
-!data/.gitignore
 
-# MLflow
-mlruns/
-.mlflow-props
+# ...BUT, do NOT ignore the DVC pointer files (.dvc)
+# or any .gitignore files inside those folders.
+!data/raw/*.dvc
+!data/raw/.gitignore
+
+!data/processed/*.dvc
+!data/processed/.gitignore
+
+!data/models/*.dvc
+!data/models/.gitignore

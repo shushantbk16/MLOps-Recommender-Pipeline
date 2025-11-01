@@ -1,0 +1,5 @@
+outs:
+- md5: f9cf7acea60fda773d01d770cc56d08d
+  size: 302346538
+  hash: md5
+  path: lightfm_model.pkl

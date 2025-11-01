@@ -1,0 +1,5 @@
+outs:
+- md5: b8eee69376fd736c0be474bae8ad55e0
+  size: 19600938
+  hash: md5
+  path: lightfm_dataset_map.pkl

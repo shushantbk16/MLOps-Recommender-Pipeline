@@ -8,6 +8,3 @@ __pycache__/
 *.pyc
 mlops-recsys/
 env/
-
-# Data - DVC will pull this
-data/

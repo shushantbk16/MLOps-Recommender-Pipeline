@@ -1,0 +1,5 @@
+outs:
+- md5: eb05d56f6a5b8228c93ac57ff516f8c2
+  size: 131943748
+  hash: md5
+  path: user_history_map.pkl

@@ -1,0 +1,12 @@
+pandas
+dvc[s3] # Use gdrive, s3, or azure depending on your remote
+mlflow
+uvicorn[standard]
+fastapi
+lightfm
+xgboost
+sentence-transformers
+faiss-cpu
+scikit-learn
+streamlit
+pyarrow

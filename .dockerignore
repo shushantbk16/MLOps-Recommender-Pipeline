@@ -1,0 +1,13 @@
+# Git and DVC
+.git
+.dvc
+.dvc/cache
+
+# Python
+__pycache__/
+*.pyc
+mlops-recsys/
+env/
+
+# Data - DVC will pull this
+data/

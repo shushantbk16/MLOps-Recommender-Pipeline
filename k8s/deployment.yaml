@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: recommender-deployment
+  labels:
+    app: recommender
+spec:
+  replicas: 2 # <-- High Availability (HA) - key resume point
+  selector:
+    matchLabels:
+      app: recommender
+  template:
+    metadata:
+      labels:
+        app: recommender
+    spec:
+      containers:
+        - name: recommender-app
+          image: shushantbk16/mlops-recommender-pipeline:latest # Your Published Docker Image
+          ports:
+            - containerPort: 8501
+          resources:
+            requests:
+              memory: "2Gi" # Request minimum 2GB to load key models
+              cpu: "1"
+            limits:
+              memory: "4Gi" # Allow up to 4GB to handle XGBoost/SBERT spikes
+              cpu: "2"

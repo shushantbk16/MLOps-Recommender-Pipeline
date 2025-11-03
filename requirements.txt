@@ -1,4 +1,4 @@
-pandas # Use gdrive, s3, or azure depending on your remote
+pandas
 mlflow
 uvicorn[standard]
 fastapi

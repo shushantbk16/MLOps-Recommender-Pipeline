@@ -1,10 +1,22 @@
-# Git and DVC
+# Ignore all tracking, envs, and caches
 .git
 .dvc
 .dvc/cache
-
-# Python
+mlruns/
+notebooks/
+scripts/
 __pycache__/
 *.pyc
+
+# Conda/Python envs
 mlops-recsys/
 env/
+venv/
+
+# Mac files
+.DS_Store
+
+# Ignore all data...
+data/*
+# ...BUT, add an exception (!) for the final models
+!data/models

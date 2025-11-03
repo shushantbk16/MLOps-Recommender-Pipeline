@@ -1,21 +1,22 @@
-# Stage 1: Use the official Python 3.10 slim image
-FROM python:3.10-slim
+# --- Use the highly stable Python 3.9 base image ---
+FROM python:3.9
 
 # Set the working directory inside the container
 WORKDIR /app
 
-# Install system-level dependencies
+# Install system-level dependencies (required for all C extensions)
 RUN apt-get update && apt-get install -y \
     build-essential \
     && rm -rf /var/lib/apt/lists/*
 
-# Create a requirements.txt file for our Python libraries
+# Copy and install our Python requirements
 COPY requirements.txt .
+# This single command will now work reliably on Python 3.9
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Now, copy all our project files into the container
-# This will now include 'data/models' because we fixed .dockerignore
-COPY . .
+# Copy the app files and models
+COPY demo.py .
+COPY data/models/ ./data/models/
 
 # Expose the port Streamlit runs on
 EXPOSE 8501

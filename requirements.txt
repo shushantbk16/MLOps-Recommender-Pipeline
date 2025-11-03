@@ -2,10 +2,7 @@ pandas
 mlflow
 uvicorn[standard]
 fastapi
-lightfm
-xgboost
 sentence-transformers
-faiss-cpu
 scikit-learn
 streamlit
 pyarrow
